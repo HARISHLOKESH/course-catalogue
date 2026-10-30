@@ -1,0 +1,33 @@
+
+<%- include('../partials/head') %>
+
+<%- include('../partials/header') %>
+
+<main class="hero">
+
+    <h1>Welcome to SkillUp Academy</h1>
+
+    <p>
+        Upgrade your skills and build your future
+        with our professional training courses.
+    </p>
+
+    <a href="/courses" class="btn">
+        Explore Courses
+    </a>
+
+    <h2>Popular Courses</h2>
+
+    <div class="course-container">
+
+        <% courses.forEach((course) => { %>
+
+            <%- include('../partials/course-card', { course: course }) %>
+
+        <% }); %>
+
+    </div>
+
+</main>
+
+<%- include('../partials/footer') %>

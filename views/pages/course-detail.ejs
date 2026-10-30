@@ -1,0 +1,30 @@
+
+<%- include('../partials/head') %>
+
+<%- include('../partials/header') %>
+
+<main class="hero">
+
+    <h1><%= course.title %></h1>
+
+    <div class="course-card" style="margin: 30px auto;">
+
+        <h2>Course Information</h2>
+
+        <p><strong>Category:</strong> <%= course.category %></p>
+
+        <p><strong>Duration:</strong> <%= course.duration %></p>
+
+        <p><strong>Price:</strong> ₹<%= course.price %></p>
+
+        <h3>Course Description</h3>
+
+        <p><%= course.description %></p>
+
+        <a href="/courses" class="btn">Back to Courses</a>
+
+    </div>
+
+</main>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,17 @@
+<div class="course-card">
+
+    <h3><%= course.title %></h3>
+
+    <p><%= course.description %></p>
+
+    <p>Category: <%= course.category %></p>
+
+    <p>Duration: <%= course.duration %></p>
+
+    <p>Price: ₹<%= course.price %></p>
+
+    <a href="/courses/<%= course.id %>" class="btn">
+        View Details
+    </a>
+
+</div>
